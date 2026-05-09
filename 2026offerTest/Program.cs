@@ -2,6 +2,9 @@ using _2026offerTest.算法分类._01_数组;
 using _2026offerTest.算法分类._02_链表;
 using _2026offerTest.算法分类._03_动态规划;
 using _2026offerTest.算法分类._04_矩阵;
+using _2026offerTest.算法分类._05_树;
+using _2026offerTest.算法分类._06_回溯;
+using _2026offerTest.算法分类._07_图_搜索;
 
 namespace _2026offerTest;
 

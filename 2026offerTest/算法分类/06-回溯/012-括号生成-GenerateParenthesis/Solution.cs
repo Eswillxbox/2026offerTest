@@ -1,4 +1,4 @@
-namespace _2026offerTest.习题集;
+namespace _2026offerTest.算法分类._06_回溯;
 
 public class Q2Parenthesis
 {

@@ -1,4 +1,4 @@
-﻿namespace _2026offerTest.习题集;
+namespace _2026offerTest.算法分类._01_数组;
 
 public class Subarrays
 {
