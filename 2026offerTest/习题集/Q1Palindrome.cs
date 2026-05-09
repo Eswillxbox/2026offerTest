@@ -2,21 +2,21 @@
 
 public class Q1Palindrome
 {
-    public bool IsPalindrome(ListNode01 head)
+    public bool IsPalindrome(ListNode head)
     {
         if (head == null || head.next == null)
             return true;
-        ListNode01 slow = head;
-        ListNode01 fast = head;
+        ListNode slow = head;
+        ListNode fast = head;
         while (fast.next != null && fast.next.next != null)
         {
             slow = slow.next;
             fast = fast.next.next;
         }
-        ListNode01 secondHalf = ReverseList(slow.next);
+        ListNode secondHalf = ReverseList(slow.next);
         
-        ListNode01 p1 = head;
-        ListNode01 p2 = secondHalf;
+        ListNode p1 = head;
+        ListNode p2 = secondHalf;
         
         while (p1 != null && p2 != null)
         {
@@ -28,14 +28,14 @@ public class Q1Palindrome
         return true;
     }
     
-    public ListNode01 ReverseList(ListNode01 head)
+    public ListNode ReverseList(ListNode head)
     {
-        ListNode01 prev = null;
-        ListNode01 curr = head;
+        ListNode prev = null;
+        ListNode curr = head;
     
         while (curr != null)
         {
-            ListNode01 nextTemp = curr.next;
+            ListNode nextTemp = curr.next;
             curr.next = prev;
             prev = curr;
             curr = nextTemp;
@@ -45,13 +45,4 @@ public class Q1Palindrome
     }
 }
 
-public class ListNode01 
-{
-    public int val;
-    public ListNode01 next;
-    public ListNode01(int val=0, ListNode01 next=null) 
-    {
-            this.val = val;
-            this.next = next; 
-    }
-}
+
